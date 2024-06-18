@@ -40,6 +40,19 @@ header{
     width: 60px;
 }
 
+.whatsapp-msg{
+    position: fixed;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #555;
+    padding: 10px;
+    width: 120px;
+    bottom: 90px;
+    right: 40px;
+    display: none;
+}
+
+
 @media (min-width: 900px)  {
     .whatsapp{
         position: fixed;

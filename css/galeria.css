@@ -9,9 +9,9 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 30px 0;
- 
+    justify-content: space-between;
+    padding: 30px 0;
+
 }
 
 .img-pricipal{
@@ -22,7 +22,7 @@
 
 .prev, .next{
     font-size: 30px;
-    padding: 0px 0px 7px 0px;
+    padding: 5px 5px 12px 5px;
     border-radius: 10px;
 }
 
@@ -66,6 +66,7 @@
     display: inline-block;
     width: 80px;
     height: 80px;
+    box-sizing: border-box;
 
 }
 
@@ -97,7 +98,7 @@
 @media (min-width: 900px){
     
     .prev, .next{
-        font-size: 50px;
+        font-size: 60px;
     }
     
     
@@ -127,14 +128,9 @@
         
     }
 
-
     .img-galeria-pricipal{
-
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 30px 0;
-     
+        width: 800px;
+        margin: 0 auto;
     }
 
 }
