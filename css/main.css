@@ -1,0 +1,131 @@
+.video-demo {
+    width: 100%;
+
+}
+
+.hr,.container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    /* background-color: var(--cor-amarelo); */
+    padding: 10px 0
+}
+
+.container p{
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+.texto-titulo{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+.topicos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.topicos div{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80%;    
+    padding: 10px 10px 25px 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-azul-escuro);
+    border-radius: 10px;
+}
+
+.topicos img{
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
+.topicos a{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: var(--cor-marrom);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--cor-cisa-claro);
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.topicos a:hover{
+    transition: 80ms;
+    padding: 8px;
+    border: 3px solid var(--cor-amarelo);
+    
+}
+
+.hr{
+    padding: 0;
+}
+
+
+@media (min-width: 600px) {
+
+    .hr,.container{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .container p{
+        padding: 10px 0;
+    }
+
+    .texto-titulo{
+        font-size: x-large;
+    }
+
+    .topicos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .topicos div{
+        width: calc(180px + 5%);
+    }
+
+    .topicos img{
+        margin: 20px 0 20px 0;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .hr,.container{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .container p{
+        font-size: large;
+        padding: 10px 0;
+    }
+
+    .texto-titulo{
+        font-size: xx-large;
+        padding: 20px 0;
+    }
+
+    .topicos div{
+        padding: 10px;
+    }
+
+    .topicos img{
+        width: 90%;
+    }
+    .topicos a{
+        padding: 10px; 
+        margin-bottom: 20px;     
+    }
+}

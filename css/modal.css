@@ -1,0 +1,75 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    overflow: auto;
+    display: none;
+}
+
+.modal-imagem{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid var(--cor-amarelo);
+    transition: 400ms;
+}
+
+.modal-imagem:hover{
+    width: 250px;
+    border: 2px solid var(--cor-amarelo);
+    transition: 400ms;
+}
+
+.modal-container{
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.modal-botao-fechar{
+    width: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    float:right;
+}
+
+.modal-botao-fechar:hover{
+    opacity: 60%;
+    background-color: black;
+    border-radius: 200px;
+    transition: 300ms;
+}
+
+
+@media (min-width: 400px) {
+    .modal-imagem{
+        width: 300px;
+    }
+    .modal-imagem:hover{
+        width: 350px;
+    }
+}
+
+@media (min-width: 600px) {
+    .modal-imagem{
+        width: 500px;
+    }
+    .modal-imagem:hover{
+        width: 550px;
+    }
+}
+
+@media (min-width: 900px) {
+    .modal-imagem{
+        width: 700px;
+    }
+    .modal-imagem:hover{
+        width: 800px;
+    }
+}

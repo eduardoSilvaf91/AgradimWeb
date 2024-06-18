@@ -1,0 +1,57 @@
+header{
+    background-image: radial-gradient(circle, var(--cor-azul), var(--cor-azul-escuro-mais));
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-logo img{
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.header-nav a{
+    display: inline-block;
+    color: var(--cor-cisa-claro);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 2%;
+    border-bottom: 4px ridge transparent;
+    padding-bottom: 2px;
+
+}
+
+.header-nav a:hover{
+    transition: 100ms;
+    border-bottom: 4px ridge var(--cor-amarelo);
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp img{
+    width: 50px;
+}
+
+.whatsapp img:hover{
+    transition: 200ms;
+    width: 60px;
+}
+
+@media (min-width: 900px)  {
+    .whatsapp{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+    }
+    .whatsapp img{
+        width: 70px;
+    }
+
+    .whatsapp img:hover{
+        transition: 200ms;
+        width: 90px;
+    }
+}
