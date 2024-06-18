@@ -1,5 +1,140 @@
 .galeria{
     background-color: var(--cor-amarelo);
     width: 100%;
-    height: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.img-galeria-pricipal{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+ 
+}
+
+.img-pricipal{
+    height: 270px;
+    border-radius: 10px;
+
+}
+
+.prev, .next{
+    font-size: 30px;
+    padding: 0px 0px 7px 0px;
+    border-radius: 10px;
+}
+
+.prev:hover, .next:hover{
+    background-color: var(--cor-azul);
+}
+
+
+.image-list{
+    background-color: white;
+    display: flex;
+    margin: 0;
+    overflow-x: auto;
+    border-top: 5px solid var(--cor-marrom);
+    
+    
+}
+
+ /* height */
+.image-list::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.image-list::-webkit-scrollbar-track {
+    background: var(--cor-marrom);
+}
+
+/* Handle */
+.image-list::-webkit-scrollbar-thumb {
+  background: var(--cor-azul);
+  border-radius: 20px;
+  border: 3px solid var(--cor-azul-escuro);
+}
+
+
+
+.image-list img{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+}
+
+.image-list img:hover{
+    opacity: 70%;
+}
+
+@media (min-width: 600px){
+    
+    
+    .prev, .next{
+        font-size: 40px;
+    }
+
+
+    .image-list img{
+
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .img-pricipal{
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 900px){
+    
+    .prev, .next{
+        font-size: 50px;
+    }
+    
+    
+    .image-list img{
+
+        width: 150px;
+        height: 150px;
+        
+    }
+
+    .img-pricipal{
+        height: 500px;
+    
+    }
+
+
+}
+
+@media (min-width: 1200px){
+
+    .image-list{
+        border: 5px solid var(--cor-marrom);
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 800px;
+        margin: 0 auto;
+        
+    }
+
+
+    .img-galeria-pricipal{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 30px 0;
+     
+    }
+
 }
