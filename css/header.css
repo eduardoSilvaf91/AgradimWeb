@@ -67,4 +67,10 @@ header{
         transition: 200ms;
         width: 90px;
     }
+
+    .whatsapp-msg{
+        bottom: 140px;
+        right: 70px;
+
+    }
 }
